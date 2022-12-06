@@ -57,10 +57,12 @@
 .postList-main .container {
   display: flex;
   gap: 1rem;
+  padding: 1rem;
+  border: 3px dashed black;
 }
 
 .postList-list {
-  max-width: 12rem;
+  width: auto;
 }
 
 .postList-outlet {

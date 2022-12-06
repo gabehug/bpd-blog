@@ -1,5 +1,6 @@
 body {
   color: #5D3F2E;
+  overflow: hidden;
 }
 
 .container {
@@ -15,8 +16,9 @@ body {
 }
 
 .content {
-  padding-top: 3rem;
+  padding: 3rem;
   padding-bottom: 3rem;
+  width: 100vw;
 }
 
 h1 {
@@ -47,6 +49,68 @@ nav ul {
 nav ul a:hover {
   text-decoration-style: wavy;
   text-decoration-thickness: 1px;
+}
+
+.mainImage {
+  z-index: 1;
+  max-width: 90vw;
+  height: auto;
+}
+
+.openButton {
+  width: 10rem;
+  position: relative;
+  top: 0.5rem;
+  left: 6.5rem;
+  --shadow-color: hsl(var(--hs-links) 30%);
+  --shadow-size: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-main);
+  color: var(--color-secondary);
+  font-family: var(--font-display);
+  font-weight: bold;
+  line-height: 2;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0.425rem 1rem;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 var(--shadow-size) 0 0 var(--shadow-color);
+  outline-offset: 2px;
+  transform: translateY(0);
+  transition: background-color 50ms ease-out, box-shadow 50ms ease-out, transform 100ms cubic-bezier(0.3, 0.6, 0.8, 1.25);
+}
+
+.openButton:hover {
+  --raise: 1px;
+  color: var(--color-secondary);
+  text-decoration: none;
+  box-shadow: 0 calc(var(--shadow-size) + var(--raise)) 0 0 var(--shadow-color);
+  transform: translateY(calc(var(--raise) * -1));
+}
+
+.openButton:active {
+  --press: 0.5px;
+  box-shadow: 0 calc(var(--shadow-size) - var(--press)) 0 0 var(--shadow-color);
+  transform: translateY(var(--press));
+  background-color: var(--color-links-hover);
+}
+
+.openButton[disabled],
+.openButton[aria-disabled="true"] {
+  transform: translateY(0);
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.openButton:focus:not(:focus-visible) {
+  outline: none;
 }
 
 @media print, (min-width: 640px) {

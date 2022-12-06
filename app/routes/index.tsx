@@ -1,4 +1,5 @@
 import type { LinksFunction } from "@remix-run/node";
+import cover from "~/assets/images/bookCover.png";
 
 import stylesUrl from "~/styles/index.css";
 
@@ -10,9 +11,9 @@ export default function IndexRoute() {
   return (
     <div className="container">
       <div className="content">
-        <h1>Notes from the road</h1>
-        <a href="/postList" className="button">Click me please!</a>
-        <h4>THIS IS WHERE THE MAIN COVER (maybe animation of book will go) AND LANDING PAGE</h4>
+        <a href="/postList" className="openButton">OPEN HERE</a>
+        <img className="mainImage" src={cover} alt="cover image"/>
+        <h6>Web Design by <a href="https://blankpagedesign.org">BPD</a></h6>
       </div>
     </div>
   );

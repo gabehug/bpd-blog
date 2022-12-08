@@ -88,8 +88,8 @@ nav ul a:hover {
 }
 
 .openButton:hover {
-  --raise: 1px;
-  color: var(--color-secondary);
+  --raise: 5px;
+  color: var(--color-links);
   text-decoration: none;
   box-shadow: 0 calc(var(--shadow-size) + var(--raise)) 0 0 var(--shadow-color);
   transform: translateY(calc(var(--raise) * -1));
@@ -112,6 +112,12 @@ nav ul a:hover {
 .openButton:focus:not(:focus-visible) {
   outline: none;
 }
+
+.copyright {
+  position: fixed;
+  bottom: 2.5rem;
+}
+
 
 @media print, (min-width: 640px) {
   h1 span {

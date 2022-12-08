@@ -13,7 +13,7 @@ export default function IndexRoute() {
       <div className="content">
         <a href="/postList" className="openButton">OPEN HERE</a>
         <img className="mainImage" src={cover} alt="cover image"/>
-        <h6>Web Design by <a href="https://blankpagedesign.org">BPD</a></h6>
+        <h6 className="copyright">Web Design by <a href="https://blankpagedesign.org">BPD</a></h6>
       </div>
     </div>
   );

@@ -68,7 +68,7 @@ nav ul a:hover {
   -moz-appearance: none;
   cursor: pointer;
   appearance: none;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-main);
@@ -79,7 +79,7 @@ nav ul a:hover {
   font-size: 1rem;
   margin: 0;
   padding: 0.425rem 1rem;
-  border: 0;
+  border: 3px solid var(--color-main);
   border-radius: 8px;
   box-shadow: 0 var(--shadow-size) 0 0 var(--shadow-color);
   outline-offset: 2px;
@@ -89,7 +89,9 @@ nav ul a:hover {
 
 .openButton:hover {
   --raise: 5px;
-  color: var(--color-links);
+  color: var(--color-main);
+  background-color: var(--color-secondary);
+  border: 3px solid var(--color-main);
   text-decoration: none;
   box-shadow: 0 calc(var(--shadow-size) + var(--raise)) 0 0 var(--shadow-color);
   transform: translateY(calc(var(--raise) * -1));

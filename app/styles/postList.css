@@ -2,12 +2,16 @@
   display: flex;
   flex-direction: column;
   min-height: inherit;
+  background-size: 27%;
+  background-image: url("~/assets/images/dotBackground.png");
+  background-repeat: repeat;
 }
 
 .postList-header {
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 0 0;
   padding: 2rem 0;
   background-color: #E7B275;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .postList-header .container {
@@ -23,7 +27,7 @@
 
 .postList-header .home-link a {
   color: var(--color-main);
-  /* text-shadow: 0 2px 0 rgba(0, 0, 0, 0.75); */
+  text-shadow: 0.75px 2px 0 rgba(0, 0, 0, 0.65); 
   text-align: center;
 }
 
@@ -56,14 +60,10 @@
 .postList-main .container {
   display: flex;
   width: 90%;
-  max-width: 45rem;
+  max-width: 60rem;
   gap: 1rem;
   padding: 1rem;
-  border: 3px dashed black;
-  border-radius: 1.5%;
-  background-image: url("~/assets/images/dotBackground.png");
-  background-repeat: repeat;
-  background-size: contain;
+
 }
 
 .postList-list {
@@ -101,45 +101,119 @@
   transform: scale(1.05);
 }
 
+
 .footer {
-  background-color: #5D3F2E;
-  height: 14rem;
+  background-color: var(--color-main);
+  height: 100%;
   width: 100%;
 }
 
 .footerContainer {
   width: 100%;
-  height: auto;
-  padding: 0 2rem;
+  height: 100%;
+  padding: 0rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .content {
   width: 100%;
-  height: 14rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #fff;
+}
 
+.footerMain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(143, 143, 143, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 3rem 0rem;
+  padding: 2rem 0rem;
 }
 
 .topContainer {
+  height: 100%;
   width: 100%;
-  height: auto;
-  background-color: blue;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.topContainer .links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.links a {
+  color: var(--color-links);
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: .065rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+.links a:hover {
+  color: var(--color-secondary);
+  cursor: pointer;
+}
+
+.topContainer .rightLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1.5rem;
+  
+}
+
+.rightLinks .gitIcon {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  background: url("../assets/images/github.png");
+  background-size: cover;
+}
+
+.gitIcon:hover {
+  cursor: pointer;
+  background: url("../assets/images/githubWhite.png");
+  background-size: cover;
+}
+
+.rightLinks .instaIcon {
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem;
+  background: url("../assets/images/insta.png");
+  background-size: cover;
+}
+
+.instaIcon:hover {
+  cursor: pointer;
+  background: url("../assets/images/instaWhite.png");
+  background-size: cover;
 }
 
 .bottomContainer {
   width: 100%;
-  margin-top: 7.25rem;
-  padding: 2rem;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0rem;
+  color: var(--color-secondary);
 }
 
 .bottomContainer a:hover {
@@ -159,9 +233,15 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
+
+  .postList-layout {
+    background-size: 15%;
+    background-image: url("~/assets/images/dotBackground.png");
+    background-repeat: repeat;
+  }
 }
 
-@media (max-width: 639px) {
+@media (max-width: 640px) {
   .postList-main .container {
     flex-direction: column;
   }

@@ -1,6 +1,8 @@
 import type { LinksFunction } from "@remix-run/node";
 import { Outlet, Link } from "@remix-run/react";
 import vanSketch from "~/assets/images/vanSketch.png";
+import github from "~/assets/images/github.png";
+import instagram from "~/assets/images/insta.png";
 
 import stylesUrl from "~/styles/postList.css";
 
@@ -15,7 +17,7 @@ export default function PostListRoute() {
         <div className="container">
           <h1 className="home-link">
             <Link 
-              to="/"
+              to="/postList"
               title="Notes from the road"
               aria-label="notes"
               >
@@ -37,15 +39,26 @@ export default function PostListRoute() {
           <a href="/"><img className="vanImage" src={vanSketch} alt="vanImage"/></a>
         </div>
       </div>
+
+      
       <footer className="footer">
         <div className="footerContainer">
-          <div className="content">
+          <div className="footerMain">
             <div className="topContainer">
-              <h4>Top Container</h4>
+              <li className="links">
+                <a href="https://blankpagedesign.org/gabehug">About</a>
+                <a href="https://blankpagedesign.org/photography/fading">Photography</a>
+                <a href="https://blankpagedesign.org/prints">Prints</a>
+                <a href="https://ko-fi.com/gabrielhug">Support</a>
+              </li>
+              <li className="rightLinks">
+                <a className="gitIcon" href="https://github.com/gabehug/notes" target="_blank"></a>
+                <a className="instaIcon" href="https://www.instagram.com/shutter_hug/" target="_blank"></a>
+              </li>
             </div>
-            <div className="bottomContainer">
-              <h6>Web Design by <a href="https://blankpagedesign.org">BPD</a></h6>
-            </div>
+          </div>
+          <div className="bottomContainer">
+            <h6>Web Design by <a href="https://blankpagedesign.org">BPD</a></h6>
           </div>
         </div>
       </footer>

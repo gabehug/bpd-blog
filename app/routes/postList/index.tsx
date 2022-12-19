@@ -14,7 +14,7 @@ type LoaderData = {
 export const loader: LoaderFunction = async () => {
   const data: LoaderData = {
     postListItems: await db.post.findMany({
-      orderBy: {date:"desc"}
+      orderBy: {id:"desc"}
     }),
   };
   return json(data);

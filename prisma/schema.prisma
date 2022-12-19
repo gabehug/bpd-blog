@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider = "sqlite"
+  provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
@@ -17,13 +17,6 @@ model Post {
   date      String
   preview   String
   content   String
-  image     String?
-  bookmarks Link[]
 }
 
-model Link {
-  id        String    @id @default(uuid())
-  url       String
-  imageUrl  String
-  posts     Post[]
-}
+

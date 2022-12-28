@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: inherit;
-  background-size: 27%;
+  background-size: 25%;
   background-image: url("~/assets/images/dotBackground.png");
   background-repeat: repeat;
 }
@@ -101,6 +101,44 @@
   transform: scale(1.05);
 }
 
+.imageLink:focus {
+  outline: 0px;
+}
+
+.content {
+  position: relative;
+  color: #252525;
+  padding-bottom: 18px;
+  font-size: 1rem;
+}
+
+.hovercard { 
+  position: absolute; 
+  opacity: 0; 
+  z-index: 1;
+  left: 50%;
+  bottom: -5px;
+  line-height: normal;
+  transform: translateX(-50%);
+}
+
+.content:hover .hovercard { 
+  opacity: 1; 
+  transition: all ease-in-out 0.5s;
+  padding: 2rem;
+}
+
+.tooltiptext {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  color: var(--color-main); 
+  padding: 0rem 1rem;
+  transition: 1s;
+  width: 15rem;
+  border-radius: 27.5px;
+  cursor: none;
+}
 
 .footer {
   background-color: var(--color-main);
@@ -168,6 +206,11 @@
 .links a:hover {
   color: var(--color-secondary);
   cursor: pointer;
+}
+
+.links :focus {
+  outline: var(--color-secondary) solid 2px;
+  outline-offset: 2px;
 }
 
 .topContainer .rightLinks {

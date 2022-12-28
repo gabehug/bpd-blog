@@ -1,8 +1,6 @@
 import type { LinksFunction } from "@remix-run/node";
 import { Outlet, Link } from "@remix-run/react";
 import vanSketch from "~/assets/images/vanSketch.png";
-import github from "~/assets/images/github.png";
-import instagram from "~/assets/images/insta.png";
 
 import stylesUrl from "~/styles/postList.css";
 
@@ -36,11 +34,14 @@ export default function PostListRoute() {
       </main>
       <div className="imageContainer">
         <div className="content">
-          <a href="/"><img className="vanImage" src={vanSketch} alt="vanImage"/></a>
+          <a href="/" className="imageLink"><img className="vanImage" src={vanSketch} alt="vanImage"/></a>
+          <span className="hovercard">
+            <div className="tooltiptext">
+              ^<br></br>Exit
+            </div>
+          </span>
         </div>
       </div>
-
-      
       <footer className="footer">
         <div className="footerContainer">
           <div className="footerMain">

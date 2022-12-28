@@ -53,8 +53,8 @@ nav ul a:hover {
 
 .mainImage {
   z-index: 1;
-  max-width: 90vw;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .openButton {

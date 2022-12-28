@@ -37,6 +37,7 @@ export default function PostIndexRoute() {
           <p>{post.preview}</p>
           <Link to={post.id} className="openButton">Read more</Link>
         </li>
+        
       ))}
       
       </div>

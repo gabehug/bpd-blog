@@ -16,9 +16,9 @@ body {
 }
 
 .content {
-  padding: 3rem;
-  padding-bottom: 3rem;
+  padding: 2rem;
   width: 100vw;
+  height: 100vh;
 }
 
 h1 {
@@ -53,9 +53,11 @@ nav ul a:hover {
 
 .mainImage {
   z-index: 1;
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  max-width: fit-content;
 }
+
 
 .openButton {
   width: 10rem;
@@ -114,6 +116,7 @@ nav ul a:hover {
 .openButton:focus:not(:focus-visible) {
   outline: none;
 }
+
 
 .copyright {
   position: fixed;

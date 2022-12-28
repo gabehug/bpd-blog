@@ -18,7 +18,7 @@ export const links: LinksFunction = () => {
     {
       rel: "stylesheet",
       href: globalMediumStylesUrl,
-      media: "print, (min-width: 750px)",
+      media: "print, (min-width: 640px)",
     },
     {
       rel: "stylesheet",

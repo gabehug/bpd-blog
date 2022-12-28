@@ -48,3 +48,19 @@ li {
   padding: 2rem 0rem;
   overflow: inherit;
 }
+
+.links a {
+  font-size: 1rem;
+}
+
+@media print, (min-width: 640px) {
+  .links a {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .links a {
+    font-size: 1.5rem;
+  }
+}

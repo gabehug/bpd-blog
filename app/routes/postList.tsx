@@ -37,7 +37,7 @@ export default function PostListRoute() {
           <a href="/" className="imageLink"><img className="vanImage" src={vanSketch} alt="vanImage"/></a>
           <span className="hovercard">
             <div className="tooltiptext">
-              ^<br></br>Exit
+              Exit
             </div>
           </span>
         </div>
@@ -59,7 +59,7 @@ export default function PostListRoute() {
             </div>
           </div>
           <div className="bottomContainer">
-            <h6>Web Design by <a href="https://blankpagedesign.org">BPD</a></h6>
+            <h6>Created by <a href="https://blankpagedesign.org">BPD</a></h6>
           </div>
         </div>
       </footer>

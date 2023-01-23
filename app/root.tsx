@@ -35,7 +35,7 @@ export default function App() {
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
-        <title>NOTES</title>
+        <title>BPD Blog</title>
         <Links />
         <LiveReload />
       </head>

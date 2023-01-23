@@ -112,34 +112,6 @@
   font-size: 1rem;
 }
 
-.hovercard { 
-  position: absolute; 
-  opacity: 0; 
-  z-index: 1;
-  left: 50%;
-  bottom: 8px;
-  line-height: normal;
-  transform: translateX(-50%);
-}
-
-.content:hover .hovercard { 
-  opacity: 1; 
-  transition: all ease-in-out 0.25s;
-  padding: 2rem;
-}
-
-.tooltiptext {
-  display: flex; 
-  flex-direction: row;
-  justify-content: center;
-  color: var(--color-main); 
-  padding: 0rem 1rem;
-  transition: 1s;
-  width: 15rem;
-  border-radius: 27.5px;
-  cursor: none;
-}
-
 .footer {
   background-color: var(--color-main);
   height: 100%;
@@ -278,7 +250,7 @@
   }
 
   .postList-layout {
-    background-size: 30%;
+    background-size: 27.5%;
     background-image: url("~/assets/images/dotBackground.png");
     background-repeat: repeat;
   }
@@ -290,7 +262,7 @@
   }
 
   .postList-layout {
-    background-size: 15%;
+    background-size: 20%;
     background-image: url("~/assets/images/dotBackground.png");
     background-repeat: repeat;
 

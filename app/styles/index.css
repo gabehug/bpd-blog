@@ -17,8 +17,8 @@ body {
 
 .content {
   padding: 2rem;
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: 100%;
 }
 
 h1 {
@@ -121,6 +121,15 @@ nav ul a:hover {
 .copyright {
   position: fixed;
   bottom: 2.5rem;
+  
+}
+
+.copyright a {
+  color: var(--color-main);
+}
+
+.copyright :hover{ 
+  text-decoration: underline 3.5px;
 }
 
 

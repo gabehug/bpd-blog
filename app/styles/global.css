@@ -101,9 +101,12 @@ h4 {
   line-height: 1.75rem;
 }
 
-h5,
-h6 {
+h5{
   font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+h6 {
+  font-size: 1.5rem;
   line-height: 1.25rem;
 }
 

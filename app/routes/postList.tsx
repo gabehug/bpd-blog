@@ -35,11 +35,6 @@ export default function PostListRoute() {
       <div className="imageContainer">
         <div className="content">
           <a href="/" className="imageLink"><img className="vanImage" src={vanSketch} alt="vanImage"/></a>
-          <span className="hovercard">
-            <div className="tooltiptext">
-              Exit
-            </div>
-          </span>
         </div>
       </div>
       <footer className="footer">

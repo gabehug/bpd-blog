@@ -17,6 +17,8 @@
     "@types/marked": "^4.0.8",
     "apollo-server-micro": "^3.11.1",
     "cloudinary": "^1.33.0",
+    "firebase": "^9.16.0",
+    "firebase-admin": "^11.5.0",
     "graphql": "^16.6.0",
     "isbot": "^3.6.5",
     "micro-cors": "^0.1.1",

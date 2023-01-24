@@ -66,6 +66,7 @@ img[src*="#blogImage"] {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  pointer-events: none;
 }
 
 @media print, (min-width: 640px) {

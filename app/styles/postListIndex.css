@@ -23,16 +23,18 @@ li {
 }
 
 .postContainer h1 {
-  margin-bottom: 1rem;
+  margin: 1rem 0rem;
+  text-align: center;
 }
 
 .postContainer h4 {
   font-family: var(--font-body);
+  text-align: center;
 }
 
 
 .postContainer {
-  margin: 2rem 0rem;
+  margin: 0rem;
   padding: 2.5rem;
   background-color: #F4F4F4;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -51,6 +53,19 @@ li {
 
 .links a {
   font-size: 1rem;
+}
+
+img[src*="#blogImage"] {
+	display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+  width: 80%; 
+  padding: 2em 0em;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 @media print, (min-width: 640px) {

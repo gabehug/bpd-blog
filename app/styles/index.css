@@ -63,7 +63,7 @@ nav ul a:hover {
   width: 10rem;
   position: relative;
   top: 0.5rem;
-  left: 6.5rem;
+  left: 3rem;
   --shadow-color: hsl(var(--hs-links) 30%);
   --shadow-size: 3px;
   -webkit-appearance: none;
@@ -141,6 +141,10 @@ nav ul a:hover {
   nav ul {
     font-size: 1.25rem;
     gap: 1.5rem;
+  }
+
+  .openButton {
+    left: 6.5rem;
   }
 }
 

@@ -51,13 +51,6 @@ body {
   min-height: calc(100vh - env(safe-area-inset-bottom));
 }
 
-p {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 1.15rem;
-  color: var(--color-text);
-}
-
 a {
   color: var(--color-links);
   text-decoration: none;
@@ -112,6 +105,14 @@ h5{
 h6 {
   font-size: 1rem;
   line-height: 1.25rem;
+}
+
+p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: var(--color-text);
 }
 
 .sr-only {

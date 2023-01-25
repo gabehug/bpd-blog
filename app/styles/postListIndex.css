@@ -32,6 +32,10 @@ li {
   text-align: center;
 }
 
+.postContainer ul {
+  font-family: var(--font-body);
+}
+
 
 .postContainer {
   margin: 0rem;
@@ -49,6 +53,10 @@ li {
   contain:style;
   padding: 1rem 0rem;
   overflow: inherit;
+}
+
+.postContent h1 {
+  text-align: center;
 }
 
 .links a {

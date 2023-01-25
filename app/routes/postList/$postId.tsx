@@ -1,5 +1,5 @@
 import { LoaderFunction, json, LinksFunction } from "@remix-run/node";
-import { Link, useLoaderData, useParams } from "@remix-run/react";
+import { Link, useLoaderData} from "@remix-run/react";
 import type { Post } from "@prisma/client";
 import stylesUrl from "~/styles/postListIndex.css";
 
@@ -32,7 +32,6 @@ export default function PostRoute() {
     <div className="postContainer">
       <h6>GH.{data.post.id}</h6>
       <h1>{data.post.name}</h1>
-      <h4>{data.post.slug}</h4>
       <h4>{data.post.date}</h4>
       <div className="postContent" dangerouslySetInnerHTML={{__html: html}}/>
       <Link to="/postList" className="backButton">Back to more...</Link>

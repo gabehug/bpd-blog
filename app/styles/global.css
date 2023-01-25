@@ -1,6 +1,6 @@
 /* font import statement */
 @import url("https://use.typekit.net/mck3zbd.css");
-@import url("https://use.typekit.net/mck3zbd.css");
+
 
 :root {
   --hs-links: 50 75%;
@@ -8,8 +8,9 @@
   --color-secondary: #F4F4F4;
   --color-links: #E7B275;
   --color-links-hover: #5D3F2E;
+  --color-text: #190D00;
   --font-display: 'Futura', sans-serif;
-  --font-body: 'proxima-nova', sans-serif;
+  --font-body: 'calder-lc', sans-serif;
 }
 
 html {
@@ -52,6 +53,9 @@ body {
 
 p {
   font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: var(--color-text);
 }
 
 a {

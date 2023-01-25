@@ -12,23 +12,23 @@
   z-index: 1;
 }
 
+
 li {
   color: var(--color-main);
   list-style: none;
 }
 
 .postContainer h6 {
-  font-family: var(--font-body);
   text-align: right;
 }
 
 .postContainer h1 {
-  margin: 1rem 0rem;
+  margin: 2rem 0rem 0em 0em;
   text-align: center;
 }
 
 .postContainer h4 {
-  font-family: var(--font-body);
+  font-family: var(--font-main);
   text-align: center;
 }
 
@@ -47,7 +47,7 @@ li {
   height: 100%;
   align-content: center;
   contain:style;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
   overflow: inherit;
 }
 

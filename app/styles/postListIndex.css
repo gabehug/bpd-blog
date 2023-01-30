@@ -39,7 +39,7 @@ li {
 
 .postContainer {
   margin: 0rem;
-  padding: 2.5rem;
+  padding: 1.5rem 1rem;
   background-color: #F4F4F4;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   border-radius: 1.5%;
@@ -50,7 +50,7 @@ li {
   width: 100%;
   height: 100%;
   align-content: center;
-  contain:style;
+  contain: style;
   padding: 1rem 0rem;
   overflow: inherit;
 }
@@ -80,6 +80,10 @@ img[src*="#blogImage"] {
 @media print, (min-width: 640px) {
   .links a {
     font-size: 2rem;
+  }
+  
+  .postContainer {
+    padding: 3rem;
   }
 }
 

@@ -1,4 +1,4 @@
-import type { LinksFunction } from "@remix-run/node";
+import { json, LinksFunction } from "@remix-run/node";
 import { 
   LiveReload,
   Links,
@@ -8,6 +8,7 @@ import {
 import globalStylesUrl from "./styles/global.css";
 import globalMediumStylesUrl from "./styles/global-medium.css";
 import globalLargeStylesUrl from "./styles/global-large.css";
+
 
 
 export const links: LinksFunction = () => {
@@ -29,6 +30,9 @@ export const links: LinksFunction = () => {
   ];
 };
 
+export const loader = async () => {
+  return json({gaTrackingId: process.env.GOOGLE_ID});
+};
 
 export default function App() {
   return (

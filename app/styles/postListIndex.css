@@ -77,6 +77,14 @@ img[src*="#blogImage"] {
   pointer-events: none;
 }
 
+hr {
+  width: 100%;
+  height: 5px;
+  margin: 0rem 2rem;
+  background-color: black;
+  border-radius: 5%;
+}
+
 @media print, (min-width: 640px) {
   .links a {
     font-size: 2rem;
